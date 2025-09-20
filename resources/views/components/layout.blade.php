@@ -23,23 +23,18 @@
         </x-nav-link>
       </li>
       <li>
-        <x-nav-link href="/about" :active="request()->is('about')">
-          About
-        </x-nav-link>
-      </li>
-      <li>
-        <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
+        <x-nav-link href="/jobs" :active="request()->is('jobs')">Jobs</x-nav-link>
       </li>
     </ul>
   </nav>
-  <div class="flex flex-col items-center justify-center text-center  text-white text-[30px] h-20 ">
+  <div class="flex flex-col items-center justify-center text-center font-semibold text-white text-[50px] h-20 ">
     {{ $heading }}
   </div>
   <!-- Main Content -->
+  <main class="flex-grow flex flex-col items-center justify-center text-center text-white px-4">
   {{ $slot }}
-
-
-  <!-- Footer -->
+  </main>
+  <!-- Footer -->  
   <footer class="p-4 text-center text-gray-500 text-sm">
     © 2025 MySite. All rights reserved.
   </footer>
