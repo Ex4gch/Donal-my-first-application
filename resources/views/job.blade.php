@@ -1,8 +1,18 @@
 <x-layout>
-    <x-slot:heading>
-        Contact Page
-    </x-slot:heading>
-  <main class="flex-grow flex flex-col items-center justify-center text-center text-white px-4">
-    <h1 class="text-6xl font-extrabold mb-6"></h1>
+  <x-slot:heading>
+  Job
+  </x-slot:heading>
+  <main class="flex-grow flex items-center justify-center px-4 ">
+  <div class="bg-white/10 backdrop-blur-md rounded-2xl p-20 shadow-lg w-100 text-white">
+      <h2 class="text-3xl font-bold mb-2">{{ $job['title'] }}</h2>
+      <p class="text-blue-300 text-lg mb-4">This job pays {{ $job['salary'] }} per year.</p>
+      <p class="text-gray-300 mb-6">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet quam fringilla libero rutrum lobortis. Nam id vulputate odio. Cras molestie quis ante et vestibulum. Nullam viverra leo quis libero vulputate ultricies sit amet et lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+      </p>
+      <button class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-xl font-semibold transition">
+        Apply Now
+      </button>
+    </div>
   </main>
 </x-layout>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet quam fringilla libero rutrum lobortis. Nam id vulputate odio. Cras molestie quis ante et vestibulum. Nullam viverra leo quis libero vulputate ultricies sit amet et lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
