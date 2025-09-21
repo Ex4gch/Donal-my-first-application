@@ -7,7 +7,6 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gradient-to-b from-blue-600 to-black min-h-screen flex flex-col font-sans">
-
   <!-- Navbar -->
   <nav class="flex justify-between items-center p-6 bg-gradient-to-b from-black  from-80% to-blue via-20%">
     <!-- Title (Top Left) -->
@@ -27,11 +26,11 @@
       </li>
     </ul>
   </nav>
-  <div class="flex flex-col items-center justify-center text-center font-semibold text-white text-[50px] h-20 ">
+  <div class="flex flex-col items-center justify-center text-center  font-semibold text-white text-[50px] h-20 ">
     {{ $heading }}
   </div>
   <!-- Main Content -->
-  <main class="flex-grow flex flex-col items-center justify-center text-center text-white px-4">
+  <main class="flex-grow flex flex-col items-center justify-center text-white px-4">
   {{ $slot }}
   </main>
   <!-- Footer -->  
