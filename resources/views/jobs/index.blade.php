@@ -1,6 +1,7 @@
 <x-layout>
 <x-slot:heading>
   Jobs Page
+     <a href="/jobs/create" class ="text-blue-300 bg-white w-[100px] font-medium text-[17px] rounded-3xl mb-3 "> CREATE </a>
 </x-slot:heading>
 <div class="space-y-6 w-5/6 ">
 <ul>

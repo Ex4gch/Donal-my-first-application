@@ -27,8 +27,10 @@
     </ul>
   </nav>
   <div class="flex flex-col items-center justify-center text-center  font-semibold text-white text-[50px] h-20 ">
-    {{ $heading }}
+    {{ $heading }} 
+
   </div>
+   
   <!-- Main Content -->
   <main class="flex-grow flex flex-col items-center justify-center text-white px-4">
   {{ $slot }}
@@ -39,4 +41,5 @@
   </footer>
 
 </body>
+@include('sweetalert2::index')
 </html>

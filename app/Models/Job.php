@@ -9,6 +9,8 @@
         use HasFactory;
         protected $table = 'job_listings';
 
+        protected $guarded = [];
+
         public function employer()
         {
             return $this->belongsTo(\App\Models\Employer::class);
@@ -16,7 +18,7 @@
 
         public function tags()
         {
-            return $this->belongsToMany(\App\Models\Tag::class, foreignPivotKey:
+            return $this->belongsToMany(Tag::class, foreignPivotKey:
             "job_listing_id");
         }
     }
